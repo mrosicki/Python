@@ -1,4 +1,4 @@
-coin = [50, 20, 10, 5, 2, 1]
+coins = [50, 20, 10, 5, 2, 1]
 
 def num_of_coins(amount,denominations):
     count_of_coins = 0
@@ -11,4 +11,4 @@ def num_of_coins(amount,denominations):
     return count_of_coins, coin_dict
 
 
-print(num_of_coins(700,coin))
+print(num_of_coins(217,coins))
