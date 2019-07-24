@@ -1,9 +1,9 @@
-coins = [50, 20, 10, 5, 2, 1]
+COINS = [50, 20, 10, 5, 2, 1]
 
-def num_of_coins(amount,denominations):
+def num_of_coins(amount, denominations):
     count_of_coins = 0
     coin_dict = dict.fromkeys(denominations)
-    while amount>0:
+    while amount > 0:
         for coin in denominations:
             count_of_coins += amount // coin
             coin_dict[coin] = amount // coin
@@ -11,4 +11,4 @@ def num_of_coins(amount,denominations):
     return count_of_coins, coin_dict
 
 
-print(num_of_coins(217,coins))
+print(num_of_coins(217, COINS))
