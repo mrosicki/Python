@@ -34,7 +34,6 @@ for month in month_numbers:
     monthly_frames[month_numbers.index(month)][months[month_numbers.index(month)]+ " Volumes"] = pd.to_numeric(monthly_frames[month_numbers.index(month)]['Scheduled Qty'])
     print("Done " + months[month_numbers.index(month)])
 
-
 # for month in month_numbers:
 #     print(monthly_frames[month_numbers.index(month)])
 
