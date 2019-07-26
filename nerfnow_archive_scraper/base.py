@@ -4,6 +4,12 @@ URL = 'https://www.nerfnow.com/archives'
 request = requests.get(URL)
 soup = BeautifulSoup(request.text, 'html.parser')
 counter = 0
+number_of_comics = input("How many comics from the archive? ")
+try:
+    number_of_comics = int(number_of_comics)
+except ValueError:
+    print("You have to input a number")
+    exit()
 
 for link in soup.find_all('a'):
     if 'nerfnow.com/comic' in link.get('href'):
@@ -24,5 +30,5 @@ for link in soup.find_all('a'):
                 file.write(chunk)
         counter += 1
 
-        if counter == 20:
+        if counter == number_of_comics:
             break
