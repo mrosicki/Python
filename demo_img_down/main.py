@@ -14,3 +14,4 @@ for img in range(1, LIMIT):
         print("Done: " + str(img))
     if img%500 == 0:
         DIR += 1
+
