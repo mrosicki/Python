@@ -1,20 +1,19 @@
-class First(object):
-    def __init__(self):
-        print("first")
+import sys
 
-class Second(First):
-    def __init__(self):
-        print("second")
+arr = []
+for i in range(10):
+    arr.append([])
 
-class Third(First):
-    def __init__(self):
-        super().__init__()
-        print("that's it")
+for i in range(10):
+    for j in range(10):
+        arr[i].append(i)
+        sys.stdout.write(str(arr[i][j]))
+    print()
+        
 
-class Fourth(Second, Third):
-    def init(self):
-        super().__init__()
-        print("that's it")
+elements = [inner for outer in arr for inner in outer]
 
 
-print(Fourth.__mro__)
+for value in enumerate(elements):
+    print(value[0])
+# print(enumerate(elements))
