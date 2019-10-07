@@ -2,3 +2,8 @@ monthly_volumes_by_PO/data
 monthly_volumes_by_PO/script
 demo_img_down/img
 neural_net/__pycache__
+digital_sign/eg/app/config.py
+digital_sign/eg/app/ds_config.py
+digital_sign/qs/ds_config.py
+*.pyc
+*pycache*
