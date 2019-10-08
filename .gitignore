@@ -5,5 +5,7 @@ neural_net/__pycache__
 digital_sign/eg/app/config.py
 digital_sign/eg/app/ds_config.py
 digital_sign/qs/ds_config.py
+digital_sign/qs/config.py
 *.pyc
 *pycache*
+digital_sign/qs/demo_documents

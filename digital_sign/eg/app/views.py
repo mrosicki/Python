@@ -177,7 +177,7 @@ def ds_logout_internal():
     session.pop('template_id', None)
 
 
-@app.route('/ds/callback')
+@app.route('/callback')
 def ds_callback():
     """Called via a redirect from DocuSign authentication service """
     # Save the redirect eg if present
