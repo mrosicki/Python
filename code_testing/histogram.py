@@ -28,11 +28,7 @@ class RandomImage():
                 row.append(self.generate_random_pixel())
 
     def __str__(self):
-        for row in self.image:
-            if self.image.index(row) == len(self.image)-1:
-                return "".join(row)
-            else:
-                print("".join(row))
+        return "\n".join("".join(row) for row in self.image)
 
 class Histogram():
     '''
